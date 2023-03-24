@@ -1,0 +1,17 @@
+<div class="containerMain">
+  <div class="containerHeader">
+    <h1 class="title">CLIMMOTY</h1>
+    <p class="subTitle">Select the city</p>
+    <select
+      class="inputSelectCity"
+      [(ngModel)]="idSelectedCity"
+      name="valueCheck"
+      (change)="selectChange($event)"
+    >
+      <option *ngFor="let city of cityList" value="{{ city.id }}">
+        {{ city.name }}
+      </option>
+    </select>
+  </div>
+  <app-cardInfo [infoWeather]="weatherCurrent"> </app-cardInfo>
+</div>

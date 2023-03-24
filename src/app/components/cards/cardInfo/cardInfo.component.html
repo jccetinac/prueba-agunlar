@@ -1,0 +1,46 @@
+<div class="containerPrimary">
+  <div class="containerSecundary">
+    <div class="containerTemp">
+      <img
+        class="icon"
+        src="https://firebasestorage.googleapis.com/v0/b/galviz-react-7a488.appspot.com/o/clima%20(1).png?alt=media&token=81cb5afa-fbdf-4ad3-9a70-1f51c0e3befc"
+        alt="icon"
+      />
+      <p class="paragraphTemp">
+        {{ temp | celsius }}<span class="spanTemp">°c</span>
+      </p>
+    </div>
+    <div class="containerHumity">
+      <p>
+        Country: <span class="complementSpan">{{ country }}</span>
+      </p>
+      <p>
+        Humidity: <span class="complementSpan">{{ humidity }}%</span>
+      </p>
+      <p>
+        Temperatura max:
+        <span class="complementSpan">{{ temp_max | celsius }}°c</span>
+      </p>
+    </div>
+  </div>
+  <div class="containerComplement">
+    <p class="complementParagraph">
+      Weather condition:
+      <span class="complementSpan">{{ description }}</span>
+    </p>
+    <p class="complementParagraph">
+      Current time: <span class="complementSpan">{{ timezone }}</span>
+    </p>
+    <p class="complementParagraph">
+      Visibility:
+      <span class="complementSpan">{{ visibility / 1000 }}km</span>
+    </p>
+    <p class="complementParagraph">
+      Pressure: <span class="complementSpan">{{ pressure }}mbar</span>
+    </p>
+  </div>
+  <p class="suggestion">
+    Suggestion:
+    <span class="complementSpan" *ngIf="suggestion()">{{ sugges }}</span>
+  </p>
+</div>

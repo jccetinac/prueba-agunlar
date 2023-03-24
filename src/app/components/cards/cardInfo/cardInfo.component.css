@@ -1,0 +1,74 @@
+p {
+  font-family: Segoe UI, Segoe WP, Arial, Sans-Serif;
+}
+
+.containerPrimary {
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  max-width: 100%;
+  padding: 25px 0;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/galviz-react-7a488.appspot.com/o/50.png?alt=media&token=93169407-4346-4d8a-ae80-2eb0de5a23ab');
+  background-size: cover;
+  color: white;
+  margin: auto;
+  box-shadow: 15px 15px 20px #423c3ca3;
+}
+
+.containerSecundary {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.containerTemp {
+  display: flex;
+  height: 120px;
+  align-items: center;
+}
+.icon {
+  width: 75px;
+  height: 75px;
+  margin-right: 8px;
+}
+.paragraphTemp {
+  display: flex;
+  font-size: 80px;
+  align-items: center;
+}
+
+.spanTemp {
+  font-size: 40px;
+}
+
+.containerHumity {
+  font-size: 14px;
+  line-height: 10px;
+}
+
+.containerComplement {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+
+.complementParagraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+
+.complementSpan {
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.suggestion {
+  font-size: 16px;
+  padding: 10px 0px 0px 28px;
+}
